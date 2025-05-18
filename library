@@ -1,0 +1,10 @@
+streamlit
+geemap
+leafmap
+earthengine-api
+owslib
+geopandas
+setuptools
+reportlab
+streamlit-folium
+folium
