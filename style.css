@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: #ffffff;
+  text-align: center;
+  direction: rtl;
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-slider {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  animation: backgroundChange 15s infinite;
+  filter: brightness(0.7);
+}
+
+@keyframes backgroundChange {
+  0%   { background-image: url('https://d.top4top.io/p_3399jkkes1.jpg'); }
+  33%  { background-image: url('https://e.top4top.io/p_3399j9w8t2.jpg'); }
+  66%  { background-image: url('https://l.top4top.io/p_33990g6ir1.jpg'); }
+  100% { background-image: url('https://d.top4top.io/p_3399jkkes1.jpg'); }
+}
+
+header {
+  padding: 30px 20px;
+  background-color: rgba(0, 100, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 90px;
+  margin: 10px 20px;
+}
+
+/* تخصيص الشعار الأيمن */
+.right-logo {
+  order: 1;
+}
+
+/* تخصيص الشعار الأيسر */
+.left-logo {
+  order: 3;
+}
+
+.header-text {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  order: 2;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #cce9cc;
+  animation: fadeIn 2s ease 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.project-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 40px;
+  color: #e0f7e0;
+  animation: fadeIn 2s ease 1s;
+}
+
+.button-container {
+  margin: 40px auto;
+}
+
+.map-button {
+  background-color: #5fa861;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease 1.5s;
+}
+
+.map-button:hover {
+  background-color: #4a8b4a;
+  transform: scale(1.05);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 100, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #e0fbe0;
+  font-size: 14px;
+  animation: fadeIn 2s ease 2s;
+}
